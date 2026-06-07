@@ -1,3 +1,4 @@
+"""Defines data models for the Mood Journal application."""
 from dataclasses import dataclass
 from typing import Optional
 
