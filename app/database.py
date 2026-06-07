@@ -1,3 +1,4 @@
+"""Database utilities for the Mood Journal application."""
 import sqlite3
 from flask import Flask, g
 
