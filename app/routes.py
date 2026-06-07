@@ -1,3 +1,4 @@
+"""Defines the routes for the Mood Journal application."""
 from flask import (
     Blueprint,
     jsonify,
@@ -11,7 +12,7 @@ main_bp = Blueprint("main", __name__)
 api_bp = Blueprint("api", __name__)
 
 
-# ─── Page Routes ──────────────────────────────────────────────────────────────
+# Page Routes 
 
 @main_bp.route("/")
 def index():
@@ -36,7 +37,7 @@ def history():
     return render_template("history.html", entries=entries)
 
 
-# ─── API Routes ───────────────────────────────────────────────────────────────
+# API Routes
 
 @api_bp.route("/entries", methods=["GET"])
 def get_entries():
