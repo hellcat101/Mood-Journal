@@ -1,3 +1,4 @@
+"""Mood Journal Flask App Initialization."""
 from flask import Flask
 from .database import init_db
 
